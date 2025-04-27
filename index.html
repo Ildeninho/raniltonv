@@ -20,25 +20,12 @@
 </head>
 
 <body class="bg-white text-gray-800 font-sans">
-    <!--Barra superior de informações-->
-    <div class="bg-black text-white text-sm py-2 px-4 flex justify-center items-center gap-4 flex-wrap text-center">
-        <span><i class="fa-solid fa-truck-fast mr-1"></i> Envio para todo o Brasil</span>
-        <span><i class="fa-solid fa-credit-card mr-1"></i> Parcele em até 6x sem juros</span>
-        <span><i class="fa-solid fa-lock mr-1"></i> Compra 100% segura</span>
-    </div>
-
     <!-- HEADER -->
     <header class="w-full bg-roxo relative py-12">
         <!-- Overlay gradiente -->
         <div class="absolute inset-0 bg-gradient-to-b from-black/50 to-white/70 z-0"></div>
 
-        <button id="cart-btn"
-            class="absolute top-4 right-4 flex items-center gap-2 text-black font-bold bg-roxo px-4 py-2 rounded-full shadow-md hover:scale-105 transition-all z-50">
-            (<span id="cart-count">0</span>) Carrinho
-            <i class="fa-solid fa-cart-shopping"></i>
-        </button>
-
-        <!-- Ícones no canto superior direito
+        <!-- Ícones no canto superior direito -->
         <div class="absolute top-4 right-4 flex gap-4 z-10">
             <button class="text-white hover:text-gray-200 transition duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -57,11 +44,11 @@
                 11.54L12 21.35z" />
                 </svg>
             </button>
-        </div>-->
+        </div>
 
         <!-- Conteúdo centralizado -->
         <div class="relative z-10 max-w-4xl mx-auto flex flex-col items-center px-4 text-center">
-            <img src="./assets/ale.png" alt="logo"
+            <img src="./assets/logo.png" alt="logo"
                 class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-300 mb-4" />
             <h1 class="text-4xl sm:text-5xl font-bold text-white drop-shadow-lg mb-1">Go-x</h1>
             <p class="text-white/90 font-medium mb-6">Moda canelada Premium</p>
@@ -81,56 +68,58 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mb-16">
                 <!-- Produto 1 -->
-                <div class="product">
-                    <div class="text-center product bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 relative cursor-pointer">
-                        <img src="./assets/regatabranca.jpg" alt="Regata branca"
-                            class="w-full object-contain h-48 mb-4 rounded-md">
-                        <div class="items-center bg-black text-white text-sm font-bold px-3 py-1 rounded-md w-max mb-2">-42% OFF</div>
-                        <p class="font-semibold text-lg leading-tight mb-1">Regata Branca Masculina</p>
-                        <div class="flex items-center text-yellow-500 text-sm gap-1">
-                            <span>☆☆☆☆☆</span>
-                            <span class="text-gray-600 text-xs">(0)</span>
+                <div
+                    class="flex gap-4 w-full product cursor-pointer p-4 hover:bg-white/50 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md">
+                    <img src="./assets/regatabranca.jpg" alt="Regata branca"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                    <div class="w-full">
+                        <p class="font-bold">Regata branca</p>
+                        <p class="text-sm">DESCRIÇÃO PRODUTO</p>
+                        <div class="flex items-center justify-between mt-3">
+                            <p class="font-bold text-lg text-verde-escuro bg-roxo/50 px-3 py-1 rounded-full">R$ 25,00
+                            </p>
+
                         </div>
-                        <p class="text-sm text-gray-400 line-through">R$ 99,90</p>
-                        <p class="text-xl font-bold text-red mb-1">R$ 49,90 <span class="text-sm font-normal">no Pix</span></p>
-                        <p class="text-sm text-gray-600">ou 1x de R$ 59,90</p>
                     </div>
                 </div>
 
                 <!-- Produto 2 -->
-                <div class="product">
-                    <div class="text-center product bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 relative cursor-pointer">
-                        <img src="./assets/regatamalhacinza.jpg" alt="Regata branca"
-                            class="w-full object-contain h-48 mb-4 rounded-md">
-                        <div class="items-center bg-black text-white text-sm font-bold px-3 py-1 rounded-md w-max mb-2">-42% OFF</div>
-                        <p class="font-semibold text-lg leading-tight mb-1">Regata Branca Masculina</p>
-                        <p class="text-sm text-gray-400 line-through">R$ 99,90</p>
-                        <p class="text-xl font-bold text-red mb-1">R$ 49,90 <span class="text-sm font-normal">no Pix</span></p>
-                        <p class="text-sm text-gray-600">ou 1x de R$ 59,90</p>
+                <div
+                    class="flex gap-4 w-full product cursor-pointer p-4 hover:bg-white/50 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md">
+                    <img src="./assets/regatapreta.jpg" alt="Regata preta"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                    <div class="w-full">
+                        <p class="font-bold">Regata preta</p>
+                        <p class="text-sm">DESCRIÇÃO</p>
+                        <div class="flex items-center justify-between mt-3">
+                            <p class="font-bold text-lg bg-roxo/50 px-3 py-1 rounded-full">R$ 25,00</p>
+                        </div>
                     </div>
                 </div>
                 <!--Produto 3-->
-                <div class="product">
-                    <div class="text-center product bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 relative cursor-pointer">
-                        <img src="./assets/regatapreta.jpg" alt="Regata branca"
-                            class="w-full object-contain h-48 mb-4 rounded-md">
-                        <div class="items-center bg-black text-white text-sm font-bold px-3 py-1 rounded-md w-max mb-2">-42% OFF</div>
-                        <p class="font-semibold text-lg leading-tight mb-1">Regata Branca Masculina</p>
-                        <p class="text-sm text-gray-400 line-through">R$ 99,90</p>
-                        <p class="text-xl font-bold text-red mb-1">R$ 49,90 <span class="text-sm font-normal">no Pix</span></p>
-                        <p class="text-sm text-gray-600">ou 1x de R$ 59,90</p>
+                <div
+                    class="flex gap-4 w-full product cursor-pointer p-4 hover:bg-white/50 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md">
+                    <img src="./assets/regatacinza.jpg" alt="regata cinza"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                    <div class="w-full">
+                        <p class="font-bold">Regata cinza</p>
+                        <p class="text-sm">DESCRIÇAO</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg bg-roxo/50 px-3 py-1 rounded-full">R$ 25,00</p>
+                        </div>
                     </div>
                 </div>
                 <!--Produto 4-->
-                <div class="product">
-                    <div class="text-center product bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 relative cursor-pointer">
-                        <img src="./assets/regatacinza.jpg" alt="Regata branca"
-                            class="w-full object-contain h-48 mb-4 rounded-md">
-                        <div class="items-center bg-black text-white text-sm font-bold px-3 py-1 rounded-md w-max mb-2">-42% OFF</div>
-                        <p class="font-semibold text-lg leading-tight mb-1">Regata Branca Masculina</p>
-                        <p class="text-sm text-gray-400 line-through">R$ 99,90</p>
-                        <p class="text-xl font-bold text-red mb-1">R$ 49,90 <span class="text-sm font-normal">no Pix</span></p>
-                        <p class="text-sm text-gray-600">ou 1x de R$ 59,90</p>
+                <div
+                    class="flex gap-4 w-full product cursor-pointer p-4 hover:bg-white/50 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md">
+                    <img src="./assets/regatamalhacinza.jpg" alt="regata malha cinza"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                    <div class="w-full">
+                        <p class="font-bold">Regata malha</p>
+                        <p class="text-sm">DESCRIÇAO PRODUTO</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg bg-roxo/50 px-3 py-1 rounded-full">R$ 25,00</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Adicione os outros produtos seguindo o mesmo padrão -->
@@ -145,28 +134,31 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mb-16">
                 <!-- Produto 1 -->
-                <div class="product">
-                    <div class="text-center product bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 relative cursor-pointer">
-                        <img src="./assets/basicabranca.jpg" alt="Regata branca"
-                            class="w-full object-contain h-48 mb-4 rounded-md">
-                        <div class="items-center bg-black text-white text-sm font-bold px-3 py-1 rounded-md w-max mb-2">-42% OFF</div>
-                        <p class="font-semibold text-lg leading-tight mb-1">Regata Branca Masculina</p>
-                        <p class="text-sm text-gray-400 line-through">R$ 99,90</p>
-                        <p class="text-xl font-bold text-red mb-1">R$ 49,90 <span class="text-sm font-normal">no Pix</span></p>
-                        <p class="text-sm text-gray-600">ou 1x de R$ 59,90</p>
+                <div
+                    class="flex gap-4 w-full product cursor-pointer p-4 hover:bg-white/50 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md">
+                    <img src="./assets/basicabranca.jpg" alt="basica branca"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+                    <div class="w-full">
+                        <p class="font-bold">Basica canelada</p>
+                        <p class="text-sm">DESCRIÇAO PRODUTO</p>
+                        <div class="flex items-center justify-between mt-3">
+                            <p class="font-bold text-lg bg-roxo/50 px-3 py-1 rounded-full">R$ 25,00</p>
+                        </div>
                     </div>
                 </div>
 
                 <!--Produto 2-->
-                <div class="product">
-                    <div class="text-center product bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 relative cursor-pointer">
-                        <img src="./assets/basica.jpg" alt="Regata branca"
-                            class="w-full object-contain h-48 mb-4 rounded-md">
-                        <div class="items-center bg-black text-white text-sm font-bold px-3 py-1 rounded-md w-max mb-2">-42% OFF</div>
-                        <p class="font-semibold text-lg leading-tight mb-1">Regata Branca Masculina</p>
-                        <p class="text-sm text-gray-400 line-through">R$ 99,90</p>
-                        <p class="text-xl font-bold text-red mb-1">R$ 49,90 <span class="text-sm font-normal">no Pix</span></p>
-                        <p class="text-sm text-gray-600">ou 1x de R$ 59,90</p>
+                <div
+                    class="flex gap-4 w-full product cursor-pointer p-4 hover:bg-white/50 rounded-xl transition-all duration-300 shadow-sm hover:shadow-md">
+                    <img src="./assets/basica.jpg" alt="basica preta"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+
+                    <div class="w-full">
+                        <p class="font-bold">Basica preta</p>
+                        <p class="text-sm">DESCRIÇAO PRODUTO</p>
+                        <div class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg bg-roxo/50 px-3 py-1 rounded-full">R$ 25,00</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Adicione os outros produtos seguindo o mesmo padrão -->
@@ -176,8 +168,8 @@
 
     <!-- MODAL PRODUTO -->
     <div id="productModal"
-        class="hidden fixed inset-0 z-[100] bg-black/50 items-center justify-center p-4 overflow-y-auto">
-        <div class="modal-content bg-white rounded-lg shadow-xl w-full max-w-3xl relative p-6 max-h-[90vh] overflow-y-auto">
+        class="hidden fixed inset-0 z-[100] bg-black/50 flex items-center justify-center p-4 overflow-y-auto">
+        <div class="bg-white rounded-lg shadow-xl w-full max-w-3xl relative p-6 max-h-[90vh] overflow-y-auto">
             <button class="close absolute top-4 right-4 text-2xl text-gray-600 hover:text-gray-900">&times;</button>
 
             <div class="flex flex-col md:flex-row gap-6 mt-6">
@@ -185,7 +177,7 @@
                 <img id="modalImage" src="" alt="" class="w-full md:w-1/2 h-96 object-cover rounded-lg bg-gray-200">
 
                 <!-- Conteúdo -->
-                <div class="flex-1 flex flex-col iten">
+                <div class="flex-1 flex flex-col">
                     <h2 id="modalTitle" class="text-2xl font-bold text-gray-800 mb-2"></h2>
                     <p id="modalPrice" class="text-xl text-verde-escuro font-semibold mb-4"></p>
                     <p id="modalDescription" class="text-gray-600 mb-6"></p>
@@ -201,24 +193,19 @@
                     <div id="feedback-container" class="feedback-container mt-2">
                         <!-- Seção de Feedbacks -->
                         <div id="product-feedbacks" class="space-y-4 mb-4">
-                            <!-- Formulário de Feedback -->
-                            <div id="feedback-form" class="mt-4 border-t pt-4">
-                                <h4 class="font-medium mb-3">Deixe sua avaliação</h4>
-                                <div class="flex mb-3">
-                                    <div class="stars-rating flex space-x-1">
-                                        <span class="star text-2xl cursor-pointer text-gray-300"
-                                            data-rating="1">★</span>
-                                        <span class="star text-2xl cursor-pointer text-gray-300"
-                                            data-rating="2">★</span>
-                                        <span class="star text-2xl cursor-pointer text-gray-300"
-                                            data-rating="3">★</span>
-                                        <span class="star text-2xl cursor-pointer text-gray-300"
-                                            data-rating="4">★</span>
-                                        <span class="star text-2xl cursor-pointer text-gray-300"
-                                            data-rating="5">★</span>
-                                    </div>
+                        <!-- Formulário de Feedback -->
+                        <div id="feedback-form" class="mt-4 border-t pt-4">
+                            <h4 class="font-medium mb-3">Deixe sua avaliação</h4>
+                            <div class="flex mb-3">
+                                <div class="stars-rating flex space-x-1">
+                                    <span class="star text-2xl cursor-pointer text-gray-300" data-rating="1">★</span>
+                                    <span class="star text-2xl cursor-pointer text-gray-300" data-rating="2">★</span>
+                                    <span class="star text-2xl cursor-pointer text-gray-300" data-rating="3">★</span>
+                                    <span class="star text-2xl cursor-pointer text-gray-300" data-rating="4">★</span>
+                                    <span class="star text-2xl cursor-pointer text-gray-300" data-rating="5">★</span>
                                 </div>
                             </div>
+                        </div>
                             <textarea id="feedback-comment" class="w-full border rounded p-3 mb-3 h-24 text-sm"
                                 placeholder="Conte sua experiência com o produto..."></textarea>
                             <div class="flex justify-between items-center">
@@ -290,109 +277,113 @@
         </div>
     </div>
 
-    <!-- MODAL CARRINHO CORRIGIDO -->
-
-    <div id="cart-modal"
-        class="fixed inset-0 z-[99] bg-black/40 flex items-center justify-center p-4 opacity-0 invisible transition-all duration-300 ease-out">
-        <div
-            class="modal-content bg-white rounded-lg w-full max-w-2xl mx-auto overflow-hidden shadow-2xl flex flex-col max-h-[90vh] transform transition-all duration-300 ease-out scale-95">
-
-            <!-- Cabeçalho -->
-            <div class="px-6 py-4 flex justify-between items-center">
-                <h2 class="text-xl font-semibold text-gray-800">Seu Carrinho</h2>
-                <button id="close-modal" class="text-gray-400 hover:text-gray-600 transition">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Itens do Carrinho -->
-            <div id="cart-items-container" class="flex-1 overflow-y-auto px-6 py-4 bg-gray-50">
-                <div id="cart-items" class="space-y-4">
-                    <!-- Itens serão inseridos aqui -->
-                </div>
-            </div>
-
-            <!-- Resumo -->
-            <div class="px-6 py-5 bg-white">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Coluna Esquerda -->
-                    <div class="space-y-4">
-                        <!-- Frete -->
-                        <div>
-                            <label class="text-sm font-medium text-gray-700">CEP para entrega</label>
-                            <div class="flex gap-2 mt-1">
-                                <input type="text" id="cep-input" placeholder="00000-000"
-                                    class="w-full border border-gray-300 p-2 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400">
-                                <button id="calculate-shipping"
-                                    class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition text-sm">
-                                    Calcular
-                                </button>
-                            </div>
-                            <div id="shipping-results" class="text-xs mt-1 text-gray-600 hidden"></div>
-                        </div>
-
-                        <!-- Endereço -->
-                        <div>
-                            <label class="text-sm font-medium text-gray-700">Endereço completo</label>
-                            <input type="text" id="address" placeholder="Rua, número, bairro, cidade"
-                                class="w-full border border-gray-300 p-2 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400 mt-1">
-                            <p class="text-red-500 text-xs mt-1 hidden" id="address-warn">Digite seu endereço completo
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Coluna Direita -->
-                    <div class="space-y-4">
-                        <!-- Resumo Totais -->
-                        <div class="flex justify-between text-sm">
-                            <span>Subtotal</span>
-                            <span id="subtotal">R$ 0,00</span> <!-- Este elemento é essencial -->
-                        </div>
-                        <div class="flex justify-between text-sm">
-                            <span>Frete</span>
-                            <span id="shipping-cost">-</span> <!-- Este elemento é essencial -->
-                        </div>
-                        <div class="flex justify-between text-base font-semibold pt-2 border-t">
-                            <span>Total</span>
-                            <span id="cart-total" class="text-gray-900">R$ 0,00</span>
-                            <!-- Este elemento é essencial -->
-                        </div>
-
-                        <!-- Pagamento -->
-                        <div>
-                            <label class="text-sm font-medium text-gray-700">Forma de pagamento</label>
-                            <div class="space-y-2 mt-2">
-                                <label
-                                    class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded transition">
-                                    <input type="radio" name="payment" value="pix" checked
-                                        class="h-4 w-4 text-gray-800">
-                                    <span class="text-sm">Pix (5% off)</span>
-                                </label>
-                                <label
-                                    class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded transition">
-                                    <input type="radio" name="payment" value="card" class="h-4 w-4 text-gray-800">
-                                    <span class="text-sm">Cartão de Crédito</span>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Botão Finalizar -->
-                <button id="checkout-btn"
-                    class="w-full mt-6 bg-gray-900 text-white py-3 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
-                    Finalizar Compra
-                </button>
-            </div>
+ <!-- MODAL CARRINHO -->
+<div id="cart-modal" class="hidden fixed inset-0 z-[99] bg-black/40 flex items-center justify-center p-4">
+    <div class="bg-white rounded-lg w-full max-w-2xl mx-auto overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+      <!-- Cabeçalho -->
+      <div class="border-b px-6 py-4 flex justify-between items-center">
+        <h2 class="text-xl font-semibold text-gray-800">Seu Carrinho</h2>
+        <button id="close-modal" class="text-gray-400 hover:text-gray-600 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+  
+      <!-- Itens do Carrinho -->
+      <div id="cart-items-container" class="flex-1 overflow-y-auto px-6 py-4 bg-gray-50">
+        <div id="cart-items" class="space-y-4">
+          <!-- Itens serão inseridos aqui -->
         </div>
+      </div>
+  
+      <!-- Resumo -->
+      <div class="border-t px-6 py-5 bg-white">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Coluna Esquerda -->
+          <div class="space-y-4">
+            <!-- Frete -->
+            <div>
+              <label class="text-sm font-medium text-gray-700">CEP para entrega</label>
+              <div class="flex gap-2 mt-1">
+                <input type="text" id="cep-input" placeholder="00000-000"
+                       class="w-full border border-gray-300 p-2 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400">
+                <button id="calculate-shipping"
+                        class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700 transition text-sm">
+                  Calcular
+                </button>
+              </div>
+              <div id="shipping-results" class="text-xs mt-1 text-gray-600 hidden"></div>
+            </div>
+  
+            <!-- Endereço -->
+            <div>
+              <label class="text-sm font-medium text-gray-700">Endereço completo</label>
+              <input type="text" id="address" placeholder="Rua, número, bairro, cidade"
+                     class="w-full border border-gray-300 p-2 rounded text-sm focus:outline-none focus:ring-1 focus:ring-gray-400 mt-1">
+              <p class="text-red-500 text-xs mt-1 hidden" id="address-warn">Digite seu endereço completo</p>
+            </div>
+          </div>
+  
+          <!-- Coluna Direita -->
+          <div class="space-y-4">
+            <!-- Resumo Totais -->
+            <div class="space-y-2 border-b pb-4">
+              <div class="flex justify-between text-sm">
+                <span>Subtotal</span>
+                <span id="subtotal">R$ 0,00</span>
+              </div>
+              <div class="flex justify-between text-sm">
+                <span>Frete</span>
+                <span id="shipping-cost">-</span>
+              </div>
+              <div class="flex justify-between text-base font-semibold pt-2 border-t">
+                <span>Total</span>
+                <span id="cart-total" class="text-gray-900">R$ 0,00</span>
+              </div>
+            </div>
+  
+            <!-- Pagamento -->
+            <div>
+              <label class="text-sm font-medium text-gray-700">Forma de pagamento</label>
+              <div class="space-y-2 mt-2">
+                <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded transition">
+                  <input type="radio" name="payment" value="pix" checked class="h-4 w-4 text-gray-800">
+                  <span class="text-sm">Pix (5% off)</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer hover:bg-gray-50 p-2 rounded transition">
+                  <input type="radio" name="payment" value="card" class="h-4 w-4 text-gray-800">
+                  <span class="text-sm">Cartão de Crédito</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Botão Finalizar -->
+        <button id="checkout-btn"
+                class="w-full mt-6 bg-gray-900 text-white py-3 rounded-lg text-sm font-medium hover:bg-gray-800 transition">
+          Finalizar Compra
+        </button>
+      </div>
     </div>
+  </div>
+  
+
+    <!-- BOTÃO CARRINHO -->
+    <footer class="fixed bottom-0 w-full bg-gray-500 py-3 z-40 shadow-lg">
+        <button
+            class="flex items-center justify-center gap-2 text-gray font-bold w-full hover:text-gray-500 transition-colors hover:scale-105"
+            id="cart-btn">
+            (<span id="cart-count">0</span>) Ver Carrinho
+            <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+    </footer>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="./script.js" defer></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
